@@ -1,0 +1,14 @@
+-- CREATE DATABASE IF NOT EXISTS photo_portfolio;
+-- USE photo_portfolio;
+
+-- CREATE TABLE reservations (
+--     id INT AUTO_INCREMENT PRIMARY KEY,
+--     nom VARCHAR(100) NOT NULL,
+--     email VARCHAR(100) NOT NULL,
+--     telephone VARCHAR(20) NOT NULL,
+--     type_seance VARCHAR(50) NOT NULL,
+--     date_souhaitee DATE NOT NULL,
+--     lieu VARCHAR(255) NOT NULL,
+--     message TEXT,
+--     date_creation TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+-- );
