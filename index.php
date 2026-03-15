@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photographe Pro | Capturer vos moments</title>
+    
     <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -29,7 +33,7 @@
     </header>
 
     <section id="accueil" class="hero">
-        <div class="hero-content">
+        <div class="hero-content fade-in">
             <h1>Capturer vos moments les plus précieux</h1>
             <p>Photographie de mariage, portrait et événementiel.</p>
             <a href="#reservation" class="btn-gold">Réserver une séance</a>
@@ -37,10 +41,10 @@
     </section>
 
     <section id="portfolio" class="portfolio-section">
-        <h2>Mon Portfolio</h2>
-        <p class="portfolio-desc">Découvrez une sélection de mes meilleurs clichés.</p>
+        <h2 class="fade-in">Mon Portfolio</h2>
+        <p class="portfolio-desc fade-in">Découvrez une sélection de mes meilleurs clichés.</p>
         
-        <div class="filters">
+        <div class="filters fade-in">
             <button class="filter-btn active" data-filter="tous">Tous</button>
             <button class="filter-btn" data-filter="mariage">Mariage</button>
             <button class="filter-btn" data-filter="portrait">Portrait</button>
@@ -48,24 +52,24 @@
         </div>
         
         <div class="gallery">
-            <div class="gallery-item" data-category="mariage">
+            <div class="gallery-item fade-in" data-category="mariage">
                 <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=800&q=80" alt="Mariage">
             </div>
-            <div class="gallery-item" data-category="portrait">
+            <div class="gallery-item fade-in" data-category="portrait">
                 <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80" alt="Portrait">
             </div>
-            <div class="gallery-item" data-category="evenement">
+            <div class="gallery-item fade-in" data-category="evenement">
                 <img src="https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=800&q=80" alt="Événement">
             </div>
-        </div>
+            </div>
     </section>
 
     <section id="services" class="services-section">
-        <h2>Mes Services & Tarifs</h2>
-        <p class="services-desc">Des prestations sur-mesure pour immortaliser vos plus beaux instants.</p>
+        <h2 class="fade-in">Mes Services & Tarifs</h2>
+        <p class="services-desc fade-in">Des prestations sur-mesure pour immortaliser vos plus beaux instants.</p>
         
         <div class="pricing-cards">
-            <div class="card">
+            <div class="card fade-in" style="transition-delay: 0.1s;">
                 <h3>Pack Portrait</h3>
                 <p class="price">À partir de 150€</p>
                 <ul>
@@ -76,7 +80,7 @@
                 <a href="#reservation" class="btn-gold">Réserver</a>
             </div>
 
-            <div class="card featured">
+            <div class="card featured fade-in" style="transition-delay: 0.2s;">
                 <div class="badge">Populaire</div>
                 <h3>Pack Mariage</h3>
                 <p class="price">À partir de 1200€</p>
@@ -88,7 +92,7 @@
                 <a href="#reservation" class="btn-gold">Réserver</a>
             </div>
 
-            <div class="card">
+            <div class="card fade-in" style="transition-delay: 0.3s;">
                 <h3>Pack Événement</h3>
                 <p class="price">Sur devis</p>
                 <ul>
@@ -102,10 +106,10 @@
     </section>
 
     <section id="reservation" class="reservation-section">
-        <h2>Réserver une séance</h2>
-        <p>Remplissez le formulaire ci-dessous pour vérifier mes disponibilités.</p>
+        <h2 class="fade-in">Réserver une séance</h2>
+        <p class="fade-in">Remplissez le formulaire ci-dessous pour vérifier mes disponibilités.</p>
         
-        <form action="traitement_reservation.php" method="POST" class="booking-form">
+        <form action="traitement_reservation.php" method="POST" class="booking-form fade-in">
             <div class="input-group">
                 <input type="text" name="nom" placeholder="Votre Nom complet" required>
                 <input type="email" name="email" placeholder="Votre Email" required>
@@ -132,10 +136,10 @@
 
     <section id="a-propos" class="about-section">
         <div class="about-container">
-            <div class="about-image">
+            <div class="about-image fade-in">
                 <img src="https://images.unsplash.com/photo-1554046920-90dc20696352?auto=format&fit=crop&w=800&q=80" alt="Portrait du photographe">
             </div>
-            <div class="about-content">
+            <div class="about-content fade-in">
                 <h2>À propos de moi</h2>
                 <h3 class="subtitle">Artiste de la lumière & conteur d'histoires</h3>
                 <p>Passionné par la photographie depuis plus de 10 ans, mon approche se veut naturelle, spontanée et artistique. Mon but n'est pas seulement de prendre des photos, mais de capturer l'essence de vos émotions.</p>
@@ -145,29 +149,38 @@
     </section>
 
     <section id="contact" class="contact-section">
-        <h2>Contact & Accès</h2>
-        <p class="contact-desc">Une question ou un projet spécifique ? Discutons-en !</p>
+        <h2 class="fade-in">Contact & Accès</h2>
+        <p class="contact-desc fade-in">Une question ou un projet spécifique ? Discutons-en !</p>
         
-        <div class="contact-container">
+        <div class="contact-container fade-in">
             <div class="contact-info">
                 <div class="info-item">
-                    <h4>Email</h4>
+                    <h4><i class="fa-solid fa-location-dot" style="color: var(--gold);"></i> Adresse</h4>
+                    <p>Thiès, Sénégal</p>
+                </div>
+                <div class="info-item">
+                    <h4><i class="fa-solid fa-envelope" style="color: var(--gold);"></i> Email</h4>
                     <p><a href="mailto:contact@tonsite.com">contact@tonsite.com</a></p>
                 </div>
                 <div class="info-item">
-                    <h4>Téléphone</h4>
-                    <p><a href="tel:+33600000000">+33 6 00 00 00 00</a></p>
+                    <h4><i class="fa-solid fa-phone" style="color: var(--gold);"></i> Téléphone</h4>
+                    <p><a href="tel:+221700000000">+221 70 000 00 00</a></p>
                 </div>
                 <div class="info-item">
                     <h4>Réseaux Sociaux</h4>
                     <div class="social-links">
-                        <a href="https://wa.me/33600000000" target="_blank" class="btn-social">WhatsApp</a>
-                        <a href="https://instagram.com" target="_blank" class="btn-social">Instagram</a>
+                        <a href="https://wa.me/221700000000" target="_blank" class="btn-social btn-whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                        </a>
+                        <a href="https://instagram.com" target="_blank" class="btn-social btn-instagram">
+                            <i class="fa-brands fa-instagram"></i> Instagram
+                        </a>
                     </div>
                 </div>
             </div>
+            
             <div class="contact-map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9916256937595!2d2.292292615509614!3d48.85837007928746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sTour%20Eiffel!5e0!3m2!1sfr!2sfr!4v1614243555901!5m2!1sfr!2sfr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://maps.google.com/maps?q=Thi%C3%A8s,%20Senegal&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
     </section>
